@@ -1,5 +1,3 @@
-import models.vehicle;
-
 public class App {
     public static void main(String[] args) {
 
@@ -30,6 +28,19 @@ public class App {
         truck.model = "Ranger";
         truck.miles = 100000;
         truck.price = 4000;
+
+        Vehicle[] allVehicles = {hatchback, suv, sedan, truck};
+
+        System.out.println("All Vehicles: ");
+
+        for (Vehicle thingy : allVehicles ) {
+            System.out.println( "----------------------" );
+            System.out.println(thingy.year);
+            System.out.println(thingy.brand);
+            System.out.println(thingy.model);
+            System.out.println(thingy.miles);
+            System.out.println(thingy.price);
+        }
 
     }
 }
